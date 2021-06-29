@@ -1,0 +1,59 @@
+<style>
+td,
+tr {
+	margin: 0;
+	padding: 0;
+}
+table {
+	width: 800px;
+	height: 800px;
+}
+td {
+	width: calc(100% / 4);
+	height: calc(100% / 4);
+	border-radius: 50%;
+	background-color: blue;
+	border: 1px solid;
+	text-align: center;
+	cursor: pointer;
+	/* transition: .5s; */
+}
+
+#parent {
+	overflow: hidden;
+}
+</style>
+<div id="bord">
+    <table id="target">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td style="background-color: darkgrey;">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;">5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td style="background-color: cornflowerblue;">10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+    </table>
+</div>
+
+<script src="../magnify.js"></script>
+<script>
+var o = window.magnify(document.getElementById("target"));
+console.log(o);
+</script>
